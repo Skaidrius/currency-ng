@@ -1,0 +1,23 @@
+{
+    "locale": "lt",
+    "message": "Valiutų kursai",
+    "currencies": [
+            {
+                "name":"EUR", 
+                "rate": 1,
+                "active": "no"
+            },{
+                "name": "LTL",
+                "rate": 3.4528,
+                "active": "no"
+            }, {
+                "name": "PLN",
+                "rate": 4.1028,
+                "active": "no"
+            }, {
+                "name": "USD",
+                "rate": 1.1239,
+                "active": "no"
+            }
+        ]
+}

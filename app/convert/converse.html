@@ -1,0 +1,32 @@
+<!--converse.html-->
+<md-content layout-padding >
+	<div layout layout-sm="column" >
+		<div class="maincontainer" ng-repeat='cur in main.currencies'>
+            <md-input-container flex>
+                <label>{{cur.name}}</label>
+
+                <!--if ltl active, usd value = ltl.value/ltl.rate * usd.rate-->
+                <input type="number" min="0" 
+                    ng-model="cur.result" 
+                    ng-init='cur.result = ""'
+                    ng-click='main.clear();'
+                    ng-focus='main.active = cur; cur.active = true';
+                    ng-blur='cur.active = false';
+                >
+            </md-input-container>
+            <!--<p>{{cur.result/main.active.rate*cur.rate }}</p>-->
+		</div>
+ 	</div>
+ 	<pre>focus: {{main.active}}
+{{main.currencies[0]}}
+{{main.currencies[1]}}
+{{main.currencies[2]}}
+{{main.currencies[3]}}</pre>
+ 	<div layout layout-sm="column" >
+		<div class="maincontainer" ng-repeat='cur in main.currencies'>
+            <md-input-container flex>
+                <label>1 EUR = {{cur.rate}} {{cur.name}}</label>
+            </md-input-container>
+		</div>
+ 	</div>
+</md-content>
