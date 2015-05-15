@@ -1,6 +1,6 @@
 {
     "locale": "lt",
-    "message": "Valiutų kursai",
+    "message": "Check currency exchange rates",
     "currencies": [
             {
                 "name":"EUR", 
