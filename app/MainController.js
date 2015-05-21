@@ -18,7 +18,7 @@ function MainController($http, getData, $filter){
                         "rate": 1,
                         "symbol": " €"
                     },{
-                        "name": "LTL",
+                        "name": "LTL *",
                         "rate": 3.4528,
                         "symbol": " Lt"
                     }, {
