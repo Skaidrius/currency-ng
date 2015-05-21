@@ -8,16 +8,60 @@ function MainController($http, getData, $filter){
         getData
             .success(function(response){
                 vm.message = response.message;
-                vm.currencies = response.currencies;
+                vm.rates = response.rates;
+                vm.usdRate = vm.rates["USD"];
+                vm.plnRate = vm.rates["PLN"];
+                vm.date = response.date;
+                
+                vm.currencies = [ 
+                    {   "name":"EUR", 
+                        "rate": 1,
+                        "symbol": " €"
+                    },{
+                        "name": "LTL",
+                        "rate": 3.4528,
+                        "symbol": " Lt"
+                    }, {
+                        "name": "PLN",
+                        "rate": vm.plnRate,
+                        "symbol": " zł"
+                    }, {
+                        "name": "USD",
+                        "rate": vm.usdRate,
+                        "symbol": " $"
+                    }
+                ];
+                
+                
             })
             .error(function(){
                 console.log("no data found");
             });
     
-    // getting today's date
-    vm.date = new Date;
-    vm.date = $filter('date')(vm.date, "yyyy-MM-dd");
-    vm.dateinfo = '(' + vm.date + ')';
+    vm.currencies = [ 
+            {   "name":"EUR", 
+                "rate": 1,
+                "symbol": " €"
+            },{
+                "name": "LTL",
+                "rate": 3.4528,
+                "symbol": " Lt"
+            }, {
+                "name": "PLN",
+                "rate": vm.plnRate,
+                "symbol": " zł"
+            }, {
+                "name": "USD",
+                "rate": vm.usdRate,
+                "symbol": " $"
+            }
+        ];
+
+    
+    // // getting today's date
+    // vm.date = new Date;
+    // vm.date = $filter('date')(vm.date, "yyyy-MM-dd");
+    // vm.dateinfo = '(' + vm.date + ')';
 
     // function to clear all values after click on input
     vm.clear = function(){
