@@ -5,19 +5,19 @@
             {
                 "name":"EUR", 
                 "rate": 1,
-                "active": "no"
+                "symbol": " €"
             },{
                 "name": "LTL",
                 "rate": 3.4528,
-                "active": "no"
+                "symbol": " Lt"
             }, {
                 "name": "PLN",
                 "rate": 4.1028,
-                "active": "no"
+                "symbol": " zł"
             }, {
                 "name": "USD",
                 "rate": 1.1239,
-                "active": "no"
+                "symbol": " $"
             }
         ]
 }
