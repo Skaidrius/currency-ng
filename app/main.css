@@ -25,6 +25,7 @@ footer {
     position: absolute;
     height: 20px;
     bottom:0;
+    text-align: center;
 }
 
 body {
