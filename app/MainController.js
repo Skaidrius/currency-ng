@@ -11,6 +11,7 @@ function MainController($http, getData, $filter){
                 vm.rates = response.rates;
                 vm.usdRate = vm.rates["USD"];
                 vm.plnRate = vm.rates["PLN"];
+                vm.nokRate = vm.rates["NOK"];
                 vm.date = response.date;
                 
                 vm.currencies = [ 
@@ -29,6 +30,10 @@ function MainController($http, getData, $filter){
                         "name": "USD",
                         "rate": vm.usdRate,
                         "symbol": " $"
+                    }, {
+                        "name": "NOK",
+                        "rate": vm.nokRate,
+                        "symbol": " kr"
                     }
                 ];
                 
@@ -37,25 +42,6 @@ function MainController($http, getData, $filter){
             .error(function(){
                 console.log("no data found");
             });
-    
-    vm.currencies = [ 
-            {   "name":"EUR", 
-                "rate": 1,
-                "symbol": " €"
-            },{
-                "name": "LTL",
-                "rate": 3.4528,
-                "symbol": " Lt"
-            }, {
-                "name": "PLN",
-                "rate": vm.plnRate,
-                "symbol": " zł"
-            }, {
-                "name": "USD",
-                "rate": vm.usdRate,
-                "symbol": " $"
-            }
-        ];
 
     
     // // getting today's date
