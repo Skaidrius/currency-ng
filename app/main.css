@@ -35,12 +35,12 @@ body {
     text-align: center;
 }
 
-#footer>a {
-    color: #999933 !important;
+#footer>p>a {
+    color: #999933;
 }
 
-#footer>a:focus {
+#footer>p>a:focus {
     color: #333333;
-    text-decoration: none !important;
+    text-decoration: none;
 }
 
