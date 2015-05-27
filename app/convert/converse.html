@@ -17,23 +17,21 @@
 
             </md-input-container>
 
-            <h3 class="text-center md-body-1 text-success" 
+            <h4 class="text-center md-body-1 text-success" 
                 ng-show="last.value>0 && last.value!=main.active.value">
                     {{last.value=main.active.value/main.active.rate*cur.rate | number:2 }}{{cur.symbol || ''}}
-            </h3>
+            </h4>
 
             <!--<p>{{cur.value/main.active.rate*cur.rate }}</p>-->
             <md-list-item>
-                <p class="text-center md-body-1" 
+                <h5 class="text-center md-body-1" 
                     ng-show="main.active.name && main.active.name != cur.name && main.active.name != ''"
                 >
                     1 {{main.active.name}} = {{cur.rate/main.active.rate | number:4 }} {{cur.name}}
-                </p>
+                </h5>
             </md-list-item>
 
 		</div>
  	</div>
-</md-content>
-<md-content>
     <h6>* since 1st January 2015 LTL is not used anymore</h6>
 </md-content>
