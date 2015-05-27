@@ -39,8 +39,8 @@ body {
     color: #999933;
 }
 
-#footer>p>a:focus {
-    color: #333333;
+#footer>p>a:hover {
+    color: #336633;
     text-decoration: none;
 }
 
