@@ -17,7 +17,7 @@
 
             </md-input-container>
 
-            <h4 class="text-center md-body-1 text-success" 
+            <h4 class="text-center md-body-1 text-success text-bold" 
                 ng-show="last.value>0 && last.value!=main.active.value">
                     {{last.value=main.active.value/main.active.rate*cur.rate | number:2 }}{{cur.symbol || ''}}
             </h4>
