@@ -9,19 +9,28 @@ function MainController($http, getData, $filter){
             .success(function(response){
                 vm.message = response.message;
                 vm.rates = response.rates;
-                vm.usdRate = vm.rates["USD"];
-                vm.plnRate = vm.rates["PLN"];
+                vm.gbpRate = vm.rates["GBP"];
                 vm.nokRate = vm.rates["NOK"];
+                vm.plnRate = vm.rates["PLN"];
+                vm.usdRate = vm.rates["USD"];
                 vm.date = response.date;
                 
                 vm.currencies = [ 
                     {   "name":"EUR", 
                         "rate": 1,
                         "symbol": " €"
-                    },{
+                    }, {
+                        "name": "GBP",
+                        "rate": vm.gbpRate,
+                        "symbol": " £"
+                    }, {
                         "name": "LTL *",
                         "rate": 3.4528,
                         "symbol": " Lt"
+                    }, {
+                        "name": "NOK",
+                        "rate": vm.nokRate,
+                        "symbol": " kr"
                     }, {
                         "name": "PLN",
                         "rate": vm.plnRate,
@@ -30,10 +39,6 @@ function MainController($http, getData, $filter){
                         "name": "USD",
                         "rate": vm.usdRate,
                         "symbol": " $"
-                    }, {
-                        "name": "NOK",
-                        "rate": vm.nokRate,
-                        "symbol": " kr"
                     }
                 ];
                 
