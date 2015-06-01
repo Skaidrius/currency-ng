@@ -15,7 +15,7 @@ function getData($http){
     //     });
     
     return $http
-        .get("https://api.fixer.io/latest?symbols=USD,PLN,NOK,GBP")
+        .get("https://api.fixer.io/latest?symbols=CZK,GBP,HRK,NOK,PLN,USD")
         .success(function(response){
             vm.data = response;
         })

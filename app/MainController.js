@@ -13,6 +13,8 @@ function MainController($http, getData, $filter){
                 vm.nokRate = vm.rates["NOK"];
                 vm.plnRate = vm.rates["PLN"];
                 vm.usdRate = vm.rates["USD"];
+                vm.czkRate = vm.rates["CZK"];
+                vm.hrkRate = vm.rates["HRK"];
                 vm.date = response.date;
                 
                 vm.currencies = [ 
@@ -23,6 +25,14 @@ function MainController($http, getData, $filter){
                         "name": "GBP",
                         "rate": vm.gbpRate,
                         "symbol": " £"
+                    }, {
+                        "name": "CZK",
+                        "rate": vm.czkRate,
+                        "symbol": " Kč"
+                    }, {
+                        "name": "HRK",
+                        "rate": vm.hrkRate,
+                        "symbol": " kn"
                     }, {
                         "name": "LTL *",
                         "rate": 3.4528,
