@@ -14,17 +14,21 @@
 
 <body ng-app="curRate">
 	
-	<div class="container jumbotron" ng-controller="MainController as main">
+<div id="wrapper">
+	
+	<div id="content" 
+			class="container jumbotron" 
+			ng-controller="MainController as main">
 		<h2 class="title md-display-3">CURRENCY RATES</h2>
 		<h3 class='title md-display-1 small'>BASED ON {{main.date}} ECB RATES<br /> privided by fixer.io</h3>
 			<converse></converse>
 	</div>
 
-<footer id="footer" class="container text-center text-muted">
+	<footer id="footer" class="container text-center text-muted">
+		<p>2015&copy; Made with &hearts; by <a href="mailto:skaidrius@gmail.com"> Skaidrius</a></p>
+	</footer>
 
-        <p>2015&copy; Made with &hearts; by <a href="mailto:skaidrius@gmail.com"> Skaidrius</a></p>
-
-</footer>
+</div>
 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
 <!--<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>-->
@@ -34,7 +38,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-aria.min.js"></script>
 
 <!-- Angular Material Javascript via Google CDN; version 0.8 used here -->
-<script src="https://ajax.googleapis.com/ajax/libs/angular_material/0.8.3/angular-material.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angular_material/0.11.0/angular-material.min.js"></script>
 
 <!--angular module-->
 <script type="text/javascript" src="app/app.module.js"></script>
