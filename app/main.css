@@ -29,7 +29,7 @@ body {
 
 .jumbotron .container {
     text-align: center;
-    background-color: rgba( 255, 255, 255, .3);
+    background-color: rgba( 255, 255, 255, .6);
     z-index: 1;
     border-radius: 10px;
 }
