@@ -17,7 +17,7 @@ function MainController($http, getData, $filter){
                 vm.hrkRate = vm.rates["HRK"];
                 vm.date = response.date;
                 
-                vm.currencies = [ 
+                vm.currencies = [ /* based on euro course */
                     {   "name":"EUR", 
                         "rate": 1,
                         "symbol": " €"
@@ -34,7 +34,7 @@ function MainController($http, getData, $filter){
                         "rate": vm.hrkRate,
                         "symbol": " kn"
                     }, {
-                        "name": "LTL *",
+                        "name": "LTL *",  /* just for reference on former LTL/EUR course */
                         "rate": 3.4528,
                         "symbol": " Lt"
                     }, {
@@ -57,12 +57,6 @@ function MainController($http, getData, $filter){
             .error(function(){
                 console.log("no data found");
             });
-
-    
-    // // getting today's date
-    // vm.date = new Date;
-    // vm.date = $filter('date')(vm.date, "yyyy-MM-dd");
-    // vm.dateinfo = '(' + vm.date + ')';
 
     // function to clear all values after click on input
     vm.clear = function(){
