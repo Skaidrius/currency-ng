@@ -49,6 +49,14 @@ function MainController($http, getData, $filter){
                         "name": "USD",
                         "rate": vm.usdRate,
                         "symbol": " $"
+                    }, {
+                        "name": "TRY",
+                        "rate": vm.tryRate,
+                        "symbol": " ₺"
+                    }, {
+                        "name": "EGP",
+                        "rate": vm.egpRate,
+                        "symbol": " £"
                     }
                 ];
                 
