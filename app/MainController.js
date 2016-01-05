@@ -15,6 +15,7 @@ function MainController($http, getData, $filter){
                 vm.usdRate = vm.rates["USD"];
                 vm.czkRate = vm.rates["CZK"];
                 vm.hrkRate = vm.rates["HRK"];
+                vm.tryRate = vm.rates["TRY"];
                 vm.date = response.date;
                 
                 vm.currencies = [ /* based on euro course */
@@ -53,10 +54,6 @@ function MainController($http, getData, $filter){
                         "name": "TRY",
                         "rate": vm.tryRate,
                         "symbol": " ₺"
-                    }, {
-                        "name": "EGP",
-                        "rate": vm.egpRate,
-                        "symbol": " £"
                     }
                 ];
                 
