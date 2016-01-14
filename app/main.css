@@ -10,6 +10,7 @@ body {
 .container {
     width: 100%;
     padding: 0;
+    margin: 0;
 }
 
 .jumbotron {
@@ -33,6 +34,12 @@ body {
     z-index: 1;
     border-radius: 10px;
 }
+
+#content .jumbotron {
+    margin: 0;
+    padding: 0;
+}
+
 .title {
     font-size: 1.5em;
 }
