@@ -79,3 +79,14 @@ angular
     .controller("MainController", MainController);
     
 })();
+
+(function(){
+    function curYear(){
+        var vm = this;
+        vm.getYear = new Date();
+    }
+
+angular
+    .module("curRate")
+    .controller("curYear", curYear);
+})();
