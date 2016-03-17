@@ -1,6 +1,6 @@
 ONLINE CURRENCY CONVERTER 
 
-EUR<>GBP<>CZK<>HRK<>LTL<>NOK<>PLN<>USD
+EUR<>GBP<>CZK<>HRK<>LTL<>NOK<>PLN<>USD<TRY>
 
 Converts currency on course provided by ECB. 
 Easy to modify list of currencies. 
