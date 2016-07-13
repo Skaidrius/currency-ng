@@ -37,9 +37,14 @@ body {
 .title {
     font-size: 1.5em;
     padding: 0 !important;
+    height: 8em;
 }
-.title-descr {
+.descr {
     font-size: 1em;
+}
+
+.descr-span {
+    color: #005A5B
 }
 
 md-content md-input-container {
@@ -74,10 +79,6 @@ input {
 #footer .container {
     width: 100%;
     text-align: center;
-}
-
-#footer .container>p>a, #footer .container>p>a:visited {
-    color: #993;
 }
 
 #footer .container>p>a:hover {
