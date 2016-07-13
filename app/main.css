@@ -13,7 +13,7 @@ body {
     overflow-y: auto;
     width: 100%;
     background: #FCFBE6;
-    border-bottom: 4px solid #dad7c2; /*color of columns separating line = body background color - to be visible only on small devices */
+    border: .1px solid #dad7c2; /*color of columns separating line = body background color - to be visible only on small devices */
 }
 
 .jumbotron {
@@ -22,7 +22,7 @@ body {
     overflow: hidden;
     margin: 0;
     padding: 0;
-        text-align: center;
+    text-align: center;
 }
 
 .container {
