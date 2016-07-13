@@ -1,8 +1,8 @@
 <!--converse.html-->
-<md-content layout-padding >
+<md-content layout-padding class="currency-area">
 	<div layout layout-sm="column" >
 		<div class="maincontainer" ng-repeat='cur in main.currencies'>
-            <md-input-container style="width:80%" flex ng-init='main.active = cur[0]; '>
+            <md-input-container  class="input-container" style="width:80%" flex ng-init='main.active = cur[0]; '>
                 <label>{{cur.name}}</label>
 
                 <!-- this should be shown when focused -->
