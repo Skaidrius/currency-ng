@@ -34,6 +34,10 @@ body {
     z-index: 1;
 }
 
+.container h2 {
+    margin-top: 2em;
+}
+
 .title {
     font-size: 1.5em;
     padding: 0 !important;
