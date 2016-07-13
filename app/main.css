@@ -13,6 +13,7 @@ body {
     overflow-y: auto;
     width: 100%;
     background: #FCFBE6;
+    border-bottom: 4px solid #dad7c2; /*color of columns separating line = body background color - to be visible only on small devices */
 }
 
 .jumbotron {

@@ -1,6 +1,6 @@
 <!--converse.html-->
 <md-content layout-padding class="currency-area">
-	<div layout layout-sm="column" >
+	<div layout layout-sm="column">
 		<div class="maincontainer" ng-repeat='cur in main.currencies'>
             <md-input-container  class="input-container" style="width:80%" flex ng-init='main.active = cur[0]; '>
                 <label>{{cur.name}}</label>
@@ -31,8 +31,8 @@
                     1 {{main.active.name}} = {{cur.rate/main.active.rate | number:4 }} {{cur.name}}
                 </h5>
             </md-list-item>
-
 		</div>
+            <hr />
  	</div>
     <h6 id="star" class="text-muted">
         * since 1st January 2015 Lithuania has adopted EUR <br/>
