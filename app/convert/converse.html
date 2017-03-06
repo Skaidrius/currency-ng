@@ -2,8 +2,8 @@
 <md-content layout-padding class="currency-area maincontent">
 	<div layout layout-sm="column" class='row table'>
 		<div class="card maincontainer col-lg-3 col-md-4" ng-repeat='cur in main.currencies'>
-            <md-input-container  class="input-container container" style="width:80%" flex ng-init='main.active = cur[0]; '>
-                <label>{{cur.name}}</label>
+            <md-input-container  class="input-container container" style="width:90%" flex ng-init='main.active = cur[0]; '>
+                <label class='text-muted'>{{cur.name}}</label>
 
                 <!-- this should be shown when focused -->
                 <input
@@ -12,14 +12,14 @@
                     ng-click='main.clear();'
                     ng-focus='main.active = cur; cur.active = true;'
                     ng-blur='cur.active = false'
-                    ng-class="text-success small blackColor"
+                    ng-class="text-success small"
                 />
 
             </md-input-container>
 
-            <h4 class="text-center md-body-1 text-success text-bold" 
+            <h4 class="text-center md-body-1 text-success text-bold my-0 py-0" 
                 ng-show="last.value>0 && last.value!=main.active.value">
-                    {{last.value=main.active.value/main.active.rate*cur.rate | number:2 }}{{cur.symbol || ''}}
+                    {{ last.value=main.active.value/main.active.rate*cur.rate | number:2 }}{{ cur.symbol || '' }}
             </h4>
 
            <!--<p>{{cur.value/main.active.rate*cur.rate}}</p>-->
