@@ -56,15 +56,30 @@ body {
 
 md-content md-input-container {
     width: 100% !important;
+    overflow-y: hidden;
 
 }
 
 md-content md-input-container ~ input:active {
-    /*height:20%;*/
+    height: 80%;
     padding: 0;
     margin: 0;
-    background: grey;
     color: black;
+}
+
+md-content md-input-container ~ input:target {
+    background: white;
+}
+
+
+input:focus {
+    /*height:20%;*/
+    background-color: white !important;
+    /*border: 1px dashed grey;*/
+}
+.maincontainer:hover{
+    background-color: white;
+    border: 1px dashed grey;
 }
 
 input[type=number]::-webkit-outer-spin-button,
