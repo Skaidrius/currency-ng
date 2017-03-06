@@ -17,15 +17,11 @@ body {
     border: .1px solid #dad7c2; /*color of columns separating line = body background color - to be visible only on small devices */
 }
 
-.jumbotron {
-    background: url('coins.jpg') no-repeat center center;
-    background-color: white;
-    background-size: cover;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
+/*body {*/
+/*    background: url('coins.jpg') no-repeat center center;*/
+/*    background-size: cover;*/
+/*    text-align: center;*/
+/*}*/
 
 .maincontent {
     /*background-color: rgba( 255, 255, 255, .6);*/
@@ -44,7 +40,6 @@ body {
     font-size: 1.5em;
     padding: 0 !important;
     height: 8em;
-    color: white;
 }
 .description {
     font-size: 1em;
@@ -54,15 +49,20 @@ body {
     color: #005A5B
 }
 
+.converse {
+    /*padding: 10px;*/
+    background-color: #dad7c2;
+}
+
 md-content md-input-container {
     width: 100% !important;
+
 }
 
 md-content md-input-container ~ input:active {
     background: grey;
-    color: #fff;
+    color: #FCFBE6;
 }
-
 
 input[type=number]::-webkit-outer-spin-button,
 input[type=number]::-webkit-inner-spin-button {
@@ -81,12 +81,24 @@ input {
 #star {
     color: #005A5B;
 }
-.currency-area {
+
+.main {
     background: #dad7c2;
-    padding: 10px;
 }
+/*.currency-area  {*/
+/*    padding: 10px;*/
+/*}*/
 
 .footer .container>p>a:hover {
     color: #363;
     text-decoration: none;
+}
+
+.jumboheading {
+    background-color: #FCFBE6;
+}
+
+.table {
+    background-color: #FCFBE6;
+    margin:0;
 }

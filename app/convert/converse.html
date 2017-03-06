@@ -1,8 +1,8 @@
 <!--converse.html-->
 <md-content layout-padding class="currency-area maincontent">
-	<div layout layout-sm="column" class='row'>
-		<div class="card maincontainer col-xl-2 col-lg-3 col-md-4" ng-repeat='cur in main.currencies'>
-            <md-input-container  class="input-container" style="width:80%" flex ng-init='main.active = cur[0]; '>
+	<div layout layout-sm="column" class='row table'>
+		<div class="card maincontainer col-lg-3 col-md-4" ng-repeat='cur in main.currencies'>
+            <md-input-container  class="input-container container" style="width:80%" flex ng-init='main.active = cur[0]; '>
                 <label>{{cur.name}}</label>
 
                 <!-- this should be shown when focused -->
@@ -34,8 +34,5 @@
 		</div>
             <hr />
  	</div>
-    <h6 id="star" class="text-muted">
-        * On 1st January 2015 Lithuania has adopted EUR <br/>
-        &nbsp;&nbsp; LTL is used here only for reference.
-    </h6>
+
 </md-content>
