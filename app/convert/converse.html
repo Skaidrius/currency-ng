@@ -12,12 +12,12 @@
                     ng-click='main.clear();'
                     ng-focus='main.active = cur; cur.active = true;'
                     ng-blur='cur.active = false'
-                    ng-class="text-success small"
+                    ng-class="small"
                 />
 
             </md-input-container>
 
-            <h4 class="text-center md-body-1 text-success text-bold my-0 py-0" 
+            <h4 class="text-center md-body-1 text-primary text-bold my-0 py-0" 
                 ng-show="last.value>0 && last.value!=main.active.value">
                     {{ last.value=main.active.value/main.active.rate*cur.rate | number:2 }}{{ cur.symbol || '' }}
             </h4>
