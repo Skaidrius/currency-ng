@@ -1,7 +1,7 @@
 <!--converse.html-->
-<md-content layout-padding class="currency-area">
-	<div layout layout-sm="column">
-		<div class="maincontainer" ng-repeat='cur in main.currencies'>
+<md-content layout-padding class="currency-area maincontent">
+	<div layout layout-sm="column" class='row'>
+		<div class="card maincontainer col-xl-2 col-lg-3 col-md-4" ng-repeat='cur in main.currencies'>
             <md-input-container  class="input-container" style="width:80%" flex ng-init='main.active = cur[0]; '>
                 <label>{{cur.name}}</label>
 
@@ -12,7 +12,7 @@
                     ng-click='main.clear();'
                     ng-focus='main.active = cur; cur.active = true;'
                     ng-blur='cur.active = false'
-                    ng-class="text-success small"
+                    ng-class="text-success small blackColor"
                 />
 
             </md-input-container>
@@ -35,7 +35,7 @@
             <hr />
  	</div>
     <h6 id="star" class="text-muted">
-        * on 1st January 2015 Lithuania has adopted EUR <br/>
+        * On 1st January 2015 Lithuania has adopted EUR <br/>
         &nbsp;&nbsp; LTL is used here only for reference.
     </h6>
 </md-content>

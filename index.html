@@ -1,13 +1,17 @@
 <!--index.hhtml-->
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 <title>Currency rate</title>
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" type="text/css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" type="text/css" />
 <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/0.8.3/angular-material.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=RobotoDraft:300,400,500,700,400italic">
 <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="app/main.css" type="text/css" />
 </head>
@@ -15,8 +19,10 @@
 <body ng-app="curRate">
 	
 <div class="container">
+	
+	<div class="row">
 
-	<div class="jumbotron title">
+	<div class="jumbotron title ">
 		<div class="container">
 			<h2 class="title md-display-3">CURRENCY RATES</h2>
 		</div>
@@ -28,28 +34,35 @@
 			class="contentArea" 
 			ng-controller="MainController as main">
 
-	<h3 class='description md-display-1 small'>BASED ON <span class="description-span">{{main.date}}</span> ECB RATES<br /> provided by <a href="http://fixer.io">fixer.io</a></h3>
-				
-				<converse></converse>
-	</div>
+		<h2 class="display-3 lead">Please enter an amount to convert!</h2>			
+			<div class="bg-white">
+					<converse></converse>
+			</div>
+	
+		<h3 class='description md-display-1 small'>BASED ON <span class="description-span">{{main.date}}</span> ECB RATES provided by <a href="http://fixer.io">fixer.io</a></h3>
 
-	<footer class="footer text-center text-muted navbar-fixed-bottom">
+
+	</div>
+	
+
+	<footer class="text-center text-muted navbar-fixed-bottom">
 		<div class="container" ng-controller="curYear as gY">
 			<p>2015-{{gY.getYear | date:"yyyy"}}&copy; Made with <span style="color:red; font-size:20px;">&hearts;</span> by <a href="mailto:skaidrius@gmail.com"> Skaidrius</a></p>
 		</div>
 	</footer>
 
+</div>
 
 </div>
 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-<!--<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>-->
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
 <!--Angular Material dependences-->
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-aria.min.js"></script>
 
-<!-- Angular Material Javascript via Google CDN; version 0.8 used here -->
+ <!--Angular Material Javascript via Google CDN; version 0.8 used here -->
 <script src="https://ajax.googleapis.com/ajax/libs/angular_material/0.11.0/angular-material.min.js"></script>
 
 <!--angular module-->
