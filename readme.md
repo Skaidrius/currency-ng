@@ -1,6 +1,6 @@
 CURRENCY CONVERTER 
 
-EUR<->GBP<->CZK<->HRK<->LTL<->NOK<->PLN<->USD>-<TRY
+EUR<->GBP<->CZK<->HRK<->LTL<->NOK<->PLN<->USD>-<TRY>-<BYN
 
 Converts currency on course provided by ECB. 
 Easy to modify list of currencies. 
@@ -19,3 +19,5 @@ for any comments of sugestions you can contact me at skaidrius@gmail.com
     
     
 made with HTML/CSS/Bootstrap/JavaScript/AngularJS/AngularMaterial/JSON/API
+
+refreshed on June 2018 (acc to new fixer.io release)
