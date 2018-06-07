@@ -1,6 +1,6 @@
 CURRENCY CONVERTER 
 
-EUR<->GBP<->CZK<->HRK<->LTL<->NOK<->PLN<->USD>-<TRY>-<BYN
+EUR<->GBP<->CZK<->HRK<->LTL<->NOK<->PLN<->USD>-<TRY>-<BYN >-<CNY
 
 Converts currency on course provided by ECB. 
 Easy to modify list of currencies. 

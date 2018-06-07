@@ -50,7 +50,11 @@ function MainController($http, getData, $filter){
                     }, {
                         "name": "BYN",
                         "rate": vm.rates["BYN"],
-                        "symbol": " рубель"
+                        "symbol": " Br"
+                    }, {
+                        "name": "CNY",
+                        "rate": vm.rates["CNY"],
+                        "symbol": " ¥"
                     }
                 ];
                 
