@@ -67,8 +67,9 @@ function MainController($http, getData, $filter){
     // function to clear all values after click on input
     vm.clear = function(){
         for (var i=0; i < this.currencies.length; i++ ){
-            vm.currencies[i].value = '';
+            this.currencies[i].value = '';
         }
+        // this.currencies.value = ''};
     };
 
 }

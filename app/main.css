@@ -57,6 +57,7 @@ body {
 md-content md-input-container {
     width: 100% !important;
     overflow-y: hidden;
+    padding:0;
 
 }
 
