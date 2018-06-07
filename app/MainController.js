@@ -41,7 +41,7 @@ function MainController($http, getData, $filter){
                         "symbol": " zł"
                     }, {
                         "name": "USD",
-                        "rate": vm.rates["TRY"],
+                        "rate": vm.rates["USD"],
                         "symbol": " $"
                     }, {
                         "name": "TRY",
