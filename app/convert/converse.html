@@ -11,7 +11,8 @@
                     ng-model="cur.value" 
                     ng-click='main.clear()'
                     ng-focus='main.active = cur; cur.active = true;'
-                    ng-blur='cur.active = false'
+                    ng-blur='cur.active = "", cur.active = false'
+                    ng-class="small my-0 py-0"
                 />
 
             </md-input-container>
