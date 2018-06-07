@@ -9,13 +9,6 @@ function MainController($http, getData, $filter){
             .success(function(response){
                 vm.message = response.message;
                 vm.rates = response.rates;
-                vm.gbpRate = vm.rates["GBP"];
-                vm.nokRate = vm.rates["NOK"];
-                vm.plnRate = vm.rates["PLN"];
-                vm.usdRate = vm.rates["USD"];
-                vm.czkRate = vm.rates["CZK"];
-                vm.hrkRate = vm.rates["HRK"];
-                vm.tryRate = vm.rates["TRY"];
                 vm.date = response.date;
                 
                 vm.currencies = [ /* based on euro course */
@@ -24,15 +17,15 @@ function MainController($http, getData, $filter){
                         "symbol": " €"
                     }, {
                         "name": "GBP",
-                        "rate": vm.gbpRate,
+                        "rate": vm.rates["GBP"],
                         "symbol": " £"
                     }, {
                         "name": "CZK",
-                        "rate": vm.czkRate,
+                        "rate": vm.rates["CZK"],
                         "symbol": " Kč"
                     }, {
                         "name": "HRK",
-                        "rate": vm.hrkRate,
+                        "rate": vm.rates["HRK"],
                         "symbol": " kn"
                     }, {
                         "name": "LTL *",  /* just for reference on former LTL/EUR course */
@@ -40,20 +33,24 @@ function MainController($http, getData, $filter){
                         "symbol": " Lt"
                     }, {
                         "name": "NOK",
-                        "rate": vm.nokRate,
+                        "rate": vm.rates["NOK"],
                         "symbol": " kr"
                     }, {
                         "name": "PLN",
-                        "rate": vm.plnRate,
+                        "rate": vm.rates["PLN"],
                         "symbol": " zł"
                     }, {
                         "name": "USD",
-                        "rate": vm.usdRate,
+                        "rate": vm.rates["TRY"],
                         "symbol": " $"
                     }, {
                         "name": "TRY",
-                        "rate": vm.tryRate,
+                        "rate": vm.rates["TRY"],
                         "symbol": " ₺"
+                    }, {
+                        "name": "BYN",
+                        "rate": vm.rates["BYN"],
+                        "symbol": " рубель"
                     }
                 ];
                 
